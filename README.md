@@ -1,6 +1,12 @@
 # springcloud-demo
 [springcloud-demo](https://github.com/XianReallyHot-ZZH/springcloud-demo)是一个进行springcloud实践的demo仓库。
 
+## 子模块说明
+* [springcloud-api] 业务侧的API设计，通用业务接口、类定义
+* [springcloud-provider] 业务服务提供端
+* [springcloud-consumer] 业务服务消费端
+* [springcloud-common] 技术侧的通用包，用于放置技术框架的基础的、通用的接口、类定义，比如放置单元化框架的基础、通用的接口、类定义
+
 ## 实践1：nacos + OpenFeign实现服务注册与RPC调用
 ### 实践步骤
 1. 服务端和消费端引入nacos服务注册与发现依赖
