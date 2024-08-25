@@ -35,7 +35,7 @@ Feign的服务桩子设计是以请求类型和路径作为服务接口方法的
 3. skywalking的agent版本：apache-skywalking-java-agent-9.3.0
 
 ### 工程实践步骤
-1. 根据情况修改配置文件，全用默认配置即可，就不需额外的存储了，使用H2内存数据库，其他配置后续使用时可自行修改。
+1. 根据情况修改skywalking的配置文件，全用默认配置即可，就不需额外的存储了，使用H2内存数据库，其他配置后续使用时可自行修改。
 2. 启动skywalking的server和UI，指令参考：startup.sh 或者 startup.bat
 3. 修改本项目springcloud-provider的idea启动配置，修改为：
    * VM options：-javaagent:D:\Developer\JavaSoftWare\APM\apache-skywalking-java-agent-9.3.0\skywalking-agent\skywalking-agent.jar
