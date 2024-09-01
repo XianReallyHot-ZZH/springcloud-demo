@@ -28,7 +28,7 @@
 Feign的服务桩子设计是以请求类型和路径作为服务接口方法的唯一标识，把服务的对外赋能强行绑定到接口层，而没有服务本身的service实现层的概念，意味着他把RPC远程调用的概念强行和接口路径做绑定了，这样的设计略显“僵硬”。服务对外赋能的形式不该、不能受限于某种具体的形式，强行绑定到web接口是不合理的。
 
 
-## 实践2：SkyWalking分布式链路追踪
+## 实践2：SkyWalking分布式链路追踪-(初探)本地环境搭建
 ### 环境准备
 1. 本地java环境：17
 2. skywalking的server端：apache-skywalking-apm-10.0.1
@@ -44,3 +44,8 @@ Feign的服务桩子设计是以请求类型和路径作为服务接口方法的
    * VM options：-javaagent:D:\Developer\JavaSoftWare\APM\apache-skywalking-java-agent-9.3.0\skywalking-agent\skywalking-agent.jar
    * 环境参数：SW_AGENT_NAME=consumer-application
 5. 启动springcloud-provider和springcloud-consumer，访问http://localhost:8080/，查看skywalking的UI，点击仪表盘，点击General-Root，查看Service，Topology，Trace，Log监控页面。
+
+### 源码学习资料
+1. [SkyWalking 8.7.0 源码分析](https://skywalking.apache.org/zh/2022-03-25-skywalking-source-code-analyzation/)
+2. [skywalking 9.4.0 agent+oap端源码阅读 + 二开实践](https://www.bilibili.com/video/BV1em421p7Jx/?spm_id_from=333.1007.top_right_bar_window_custom_collection.content.click&vd_source=bd1d4ea3f41e640817a8b79aa2cb267a)
+
