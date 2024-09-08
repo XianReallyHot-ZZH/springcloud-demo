@@ -49,3 +49,17 @@ Feign的服务桩子设计是以请求类型和路径作为服务接口方法的
 1. [SkyWalking 8.7.0 源码分析](https://skywalking.apache.org/zh/2022-03-25-skywalking-source-code-analyzation/)
 2. [skywalking 9.4.0 agent+oap端源码阅读 + 二开实践](https://www.bilibili.com/video/BV1em421p7Jx/?spm_id_from=333.1007.top_right_bar_window_custom_collection.content.click&vd_source=bd1d4ea3f41e640817a8b79aa2cb267a)
 
+
+
+## 实践3：SkyWalking分布式链路追踪-(进阶)
+### 内容
+比实践2更复杂的分布式链路追踪实践，涉及的中间件、框架：springcloudgateway,rocketmq,springcloud,feign,mysql,模拟出一个比较复杂的微服务调用链路，以验证skywalking的相关链路追踪功能：服务基本信息，服务拓扑，trace链路追踪，log，以及告警功能.
+
+### 功能项目模块介绍
+该项目的代码在skywalking-complete-demo模块中，该模块的子模块分别为：
+1. （待补充）
+
+### 功能验证步骤
+
+
+
